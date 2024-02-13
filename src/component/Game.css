@@ -1,0 +1,32 @@
+/* App.css */
+.game {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+  }
+  
+  .character {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    transition: left 0.2s ease-out, bottom 0.2s ease-out;
+  }
+  
+  .cloud {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    animation: move 5s infinite;
+  }
+  
+  @keyframes move {
+    0% { top: 0; }
+    100% { top: 100%; }
+  }
+  
+  .lives {
+    margin-top: 20px;
+  }
